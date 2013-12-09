@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="6.5.0">
+<eagle version="6.4">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -5097,14 +5097,14 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R5" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R6" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="HOT_PWM" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
-<part name="THERM+" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
-<part name="THERM-" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
-<part name="FAN_0_VCC" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
-<part name="FAN_1_PWM" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
-<part name="FAN_2_VCC" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
-<part name="FAN_2_PWM" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
-<part name="FAN_1_VCC" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
+<part name="THERM_SIG" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
+<part name="THERM_GND" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
+<part name="FAN_0_12V" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
 <part name="FAN_0_PWM" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
+<part name="FAN_2_12V" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
+<part name="FAN_2_PWM" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
+<part name="FAN_1_12V" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
+<part name="FAN_1_PWM" library="OBKP_Effector_PCB" deviceset="LUG" device="2.3"/>
 <part name="GND1" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND3" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="LOGO1" library="SparkFun-Aesthetics" deviceset="OSHW-LOGO" device="S"/>
@@ -5117,10 +5117,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <part name="R9" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="R10" library="SparkFun-Passives" deviceset="RESISTOR" device="0805-RES"/>
 <part name="GND5" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="HOT_VCC" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
+<part name="HOT_12V" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
 <part name="HOT_HEADER" library="SparkFun-Connectors" deviceset="M05X2" device="RA"/>
-<part name="PROBE-" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
-<part name="PROBE+" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
+<part name="PROBE_GND" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
+<part name="PROBE_SIG" library="OBKP_Effector_PCB" deviceset="LUG" device="3-X"/>
 </parts>
 <sheets>
 <sheet>
@@ -5142,28 +5142,28 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="HOT_PWM" gate="G$1" x="63.5" y="78.74" smashed="yes" rot="R270">
 <attribute name="NAME" x="76.2" y="78.74" size="1.778" layer="95"/>
 </instance>
-<instance part="THERM+" gate="G$1" x="63.5" y="58.42" smashed="yes" rot="R270">
+<instance part="THERM_SIG" gate="G$1" x="63.5" y="58.42" smashed="yes" rot="R270">
 <attribute name="NAME" x="76.2" y="58.42" size="1.778" layer="95"/>
 </instance>
-<instance part="THERM-" gate="G$1" x="63.5" y="50.8" smashed="yes" rot="R270">
+<instance part="THERM_GND" gate="G$1" x="63.5" y="50.8" smashed="yes" rot="R270">
 <attribute name="NAME" x="76.2" y="50.8" size="1.778" layer="95"/>
 </instance>
-<instance part="FAN_0_VCC" gate="G$1" x="53.34" y="96.52" smashed="yes">
+<instance part="FAN_0_12V" gate="G$1" x="53.34" y="96.52" smashed="yes">
 <attribute name="NAME" x="53.34" y="109.22" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="FAN_1_PWM" gate="G$1" x="12.7" y="96.52" smashed="yes">
+<instance part="FAN_0_PWM" gate="G$1" x="12.7" y="96.52" smashed="yes">
 <attribute name="NAME" x="12.7" y="109.22" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="FAN_2_VCC" gate="G$1" x="45.72" y="96.52" smashed="yes">
+<instance part="FAN_2_12V" gate="G$1" x="45.72" y="96.52" smashed="yes">
 <attribute name="NAME" x="45.72" y="109.22" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="FAN_2_PWM" gate="G$1" x="20.32" y="96.52" smashed="yes">
 <attribute name="NAME" x="20.32" y="109.22" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="FAN_1_VCC" gate="G$1" x="38.1" y="96.52" smashed="yes">
+<instance part="FAN_1_12V" gate="G$1" x="38.1" y="96.52" smashed="yes">
 <attribute name="NAME" x="38.1" y="109.22" size="1.778" layer="95" rot="R90"/>
 </instance>
-<instance part="FAN_0_PWM" gate="G$1" x="27.94" y="96.52" smashed="yes">
+<instance part="FAN_1_PWM" gate="G$1" x="27.94" y="96.52" smashed="yes">
 <attribute name="NAME" x="27.94" y="109.22" size="1.778" layer="95" rot="R90"/>
 </instance>
 <instance part="GND1" gate="1" x="22.86" y="50.8"/>
@@ -5178,15 +5178,15 @@ We've spent an enormous amount of time creating and checking these footprints an
 <instance part="R9" gate="G$1" x="-2.54" y="17.78" rot="R90"/>
 <instance part="R10" gate="G$1" x="7.62" y="17.78" rot="R90"/>
 <instance part="GND5" gate="1" x="-17.78" y="5.08"/>
-<instance part="HOT_VCC" gate="G$1" x="63.5" y="68.58" smashed="yes" rot="R270">
+<instance part="HOT_12V" gate="G$1" x="63.5" y="68.58" smashed="yes" rot="R270">
 <attribute name="NAME" x="76.2" y="68.58" size="1.778" layer="95"/>
 </instance>
 <instance part="HOT_HEADER" gate="G$1" x="38.1" y="73.66"/>
-<instance part="PROBE-" gate="G$1" x="63.5" y="86.36" smashed="yes" rot="R270">
-<attribute name="NAME" x="76.2" y="86.36" size="1.778" layer="95"/>
-</instance>
-<instance part="PROBE+" gate="G$1" x="63.5" y="93.98" smashed="yes" rot="R270">
+<instance part="PROBE_GND" gate="G$1" x="63.5" y="93.98" smashed="yes" rot="R270">
 <attribute name="NAME" x="76.2" y="93.98" size="1.778" layer="95"/>
+</instance>
+<instance part="PROBE_SIG" gate="G$1" x="63.5" y="101.6" smashed="yes" rot="R270">
+<attribute name="NAME" x="76.2" y="101.6" size="1.778" layer="95"/>
 </instance>
 </instances>
 <busses>
@@ -5294,13 +5294,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="48.26" y1="73.66" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <junction x="22.86" y="55.88"/>
-<pinref part="THERM-" gate="G$1" pin="P$1"/>
+<pinref part="THERM_GND" gate="G$1" pin="P$1"/>
 <wire x1="63.5" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
 <wire x1="48.26" y1="50.8" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <junction x="48.26" y="55.88"/>
-<pinref part="PROBE-" gate="G$1" pin="P$1"/>
-<wire x1="63.5" y1="86.36" x2="60.96" y2="86.36" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="86.36" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
+<pinref part="PROBE_GND" gate="G$1" pin="P$1"/>
+<wire x1="63.5" y1="93.98" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="93.98" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 </segment>
 </net>
@@ -5380,22 +5380,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 <junction x="15.24" y="76.2"/>
 </segment>
 </net>
-<net name="N$8" class="0">
-<segment>
-<pinref part="HOT_HEADER" gate="G$1" pin="2"/>
-<wire x1="45.72" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
-<pinref part="HOT_PWM" gate="G$1" pin="P$1"/>
-<wire x1="50.8" y1="78.74" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
-<wire x1="50.8" y1="78.74" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="HOT_HEADER" gate="G$1" pin="4"/>
-<wire x1="50.8" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
-<junction x="50.8" y="78.74"/>
-</segment>
-</net>
 <net name="N$10" class="0">
 <segment>
 <pinref part="HOT_HEADER" gate="G$1" pin="10"/>
-<pinref part="HOT_VCC" gate="G$1" pin="P$1"/>
+<pinref part="HOT_12V" gate="G$1" pin="P$1"/>
 <wire x1="45.72" y1="68.58" x2="53.34" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="68.58" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
@@ -5403,13 +5391,13 @@ We've spent an enormous amount of time creating and checking these footprints an
 <wire x1="53.34" y1="71.12" x2="45.72" y2="71.12" width="0.1524" layer="91"/>
 <junction x="53.34" y="68.58"/>
 <junction x="53.34" y="71.12"/>
-<pinref part="FAN_0_VCC" gate="G$1" pin="P$1"/>
+<pinref part="FAN_0_12V" gate="G$1" pin="P$1"/>
 <wire x1="53.34" y1="93.98" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="FAN_2_VCC" gate="G$1" pin="P$1"/>
+<pinref part="FAN_2_12V" gate="G$1" pin="P$1"/>
 <wire x1="45.72" y1="93.98" x2="45.72" y2="96.52" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
 <junction x="45.72" y="93.98"/>
-<pinref part="FAN_1_VCC" gate="G$1" pin="P$1"/>
+<pinref part="FAN_1_12V" gate="G$1" pin="P$1"/>
 <wire x1="38.1" y1="96.52" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="93.98" x2="45.72" y2="93.98" width="0.1524" layer="91"/>
 <junction x="53.34" y="93.98"/>
@@ -5418,7 +5406,7 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="N$11" class="0">
 <segment>
-<pinref part="THERM+" gate="G$1" pin="P$1"/>
+<pinref part="THERM_SIG" gate="G$1" pin="P$1"/>
 <wire x1="63.5" y1="58.42" x2="27.94" y2="58.42" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="58.42" x2="27.94" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="HOT_HEADER" gate="G$1" pin="9"/>
@@ -5427,9 +5415,9 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="N$12" class="0">
 <segment>
-<pinref part="PROBE+" gate="G$1" pin="P$1"/>
-<wire x1="63.5" y1="93.98" x2="58.42" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="58.42" y1="93.98" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
+<pinref part="PROBE_SIG" gate="G$1" pin="P$1"/>
+<wire x1="63.5" y1="101.6" x2="58.42" y2="101.6" width="0.1524" layer="91"/>
+<wire x1="58.42" y1="101.6" x2="58.42" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="58.42" y1="83.82" x2="25.4" y2="83.82" width="0.1524" layer="91"/>
 <wire x1="25.4" y1="83.82" x2="25.4" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="HOT_HEADER" gate="G$1" pin="7"/>
@@ -5438,10 +5426,10 @@ We've spent an enormous amount of time creating and checking these footprints an
 </net>
 <net name="N$17" class="0">
 <segment>
-<pinref part="FAN_0_PWM" gate="G$1" pin="P$1"/>
+<pinref part="FAN_1_PWM" gate="G$1" pin="P$1"/>
 <wire x1="27.94" y1="96.52" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="93.98" x2="20.32" y2="93.98" width="0.1524" layer="91"/>
-<pinref part="FAN_1_PWM" gate="G$1" pin="P$1"/>
+<pinref part="FAN_0_PWM" gate="G$1" pin="P$1"/>
 <wire x1="20.32" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="12.7" y1="96.52" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="FAN_2_PWM" gate="G$1" pin="P$1"/>
@@ -5451,6 +5439,18 @@ We've spent an enormous amount of time creating and checking these footprints an
 <pinref part="HOT_HEADER" gate="G$1" pin="1"/>
 <wire x1="30.48" y1="78.74" x2="27.94" y2="78.74" width="0.1524" layer="91"/>
 <wire x1="27.94" y1="78.74" x2="27.94" y2="93.98" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="HOT_HEADER" gate="G$1" pin="2"/>
+<wire x1="45.72" y1="78.74" x2="50.8" y2="78.74" width="0.1524" layer="91"/>
+<pinref part="HOT_PWM" gate="G$1" pin="P$1"/>
+<wire x1="50.8" y1="78.74" x2="63.5" y2="78.74" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="78.74" x2="50.8" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="HOT_HEADER" gate="G$1" pin="4"/>
+<wire x1="50.8" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
+<junction x="50.8" y="78.74"/>
 </segment>
 </net>
 </nets>
