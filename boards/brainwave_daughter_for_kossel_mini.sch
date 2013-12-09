@@ -1428,9 +1428,6 @@ Grid 5.00 mm&lt;p&gt;
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="202,1,434.34,121.92,X4,4,,,,"/>
-</errors>
 </schematic>
 </drawing>
 </eagle>
