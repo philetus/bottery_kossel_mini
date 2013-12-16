@@ -1010,7 +1010,7 @@ Grid 5.00 mm&lt;p&gt;
 <instance part="D1_LMT_HEDR" gate="A" x="551.18" y="-5.08"/>
 <instance part="D2_LMT_HEDR" gate="A" x="561.34" y="-5.08"/>
 <instance part="GND2" gate="1" x="650.24" y="7.62"/>
-<instance part="P+2" gate="1" x="695.96" y="38.1"/>
+<instance part="P+2" gate="1" x="695.96" y="45.72"/>
 <instance part="GND3" gate="1" x="601.98" y="-17.78"/>
 <instance part="P+3" gate="VCC" x="596.9" y="12.7"/>
 <instance part="PLUG" gate="-1" x="739.14" y="35.56" rot="R180"/>
@@ -1138,8 +1138,12 @@ Grid 5.00 mm&lt;p&gt;
 <segment>
 <pinref part="P+2" gate="1" pin="+12V"/>
 <wire x1="695.96" y1="30.48" x2="695.96" y2="35.56" width="0.1524" layer="91"/>
+<wire x1="695.96" y1="35.56" x2="695.96" y2="43.18" width="0.1524" layer="91"/>
 <wire x1="673.1" y1="30.48" x2="695.96" y2="30.48" width="0.1524" layer="91"/>
 <pinref part="EXTRUDER_HEDR" gate="G$1" pin="1"/>
+<pinref part="EXTRUDER_HEDR" gate="G$1" pin="5"/>
+<wire x1="673.1" y1="35.56" x2="695.96" y2="35.56" width="0.1524" layer="91"/>
+<junction x="695.96" y="35.56"/>
 </segment>
 <segment>
 <pinref part="PLUG" gate="-2" pin="KL"/>
