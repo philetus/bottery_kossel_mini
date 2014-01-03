@@ -1263,16 +1263,11 @@ W = angled&lt;p&gt;
 <wire x1="22.86" y1="53.34" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="55.88" x2="22.86" y2="73.66" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="73.66" x2="30.48" y2="73.66" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="60.96" y1="55.88" x2="22.86" y2="55.88" width="0.1524" layer="91"/>
 <junction x="22.86" y="55.88"/>
-<pinref part="THERM_GND" gate="G$1" pin="P$1"/>
-<wire x1="63.5" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
-<wire x1="48.26" y1="50.8" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
-<junction x="48.26" y="55.88"/>
 <pinref part="PROBE_GND" gate="G$1" pin="P$1"/>
 <wire x1="63.5" y1="93.98" x2="60.96" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="60.96" y1="93.98" x2="60.96" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="60.96" y1="55.88" x2="48.26" y2="55.88" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="G$1" pin="4"/>
 </segment>
 </net>
@@ -1304,7 +1299,7 @@ W = angled&lt;p&gt;
 <wire x1="7.62" y1="27.94" x2="7.62" y2="22.86" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FAN_VCC" class="0">
+<net name="VCC" class="0">
 <segment>
 <pinref part="LED10" gate="G$1" pin="A"/>
 <wire x1="-33.02" y1="38.1" x2="-22.86" y2="38.1" width="0.1524" layer="91"/>
@@ -1352,23 +1347,6 @@ W = angled&lt;p&gt;
 <pinref part="SV1" gate="G$1" pin="6"/>
 </segment>
 </net>
-<net name="FAN_12V" class="0">
-<segment>
-<pinref part="FAN_0_12V" gate="G$1" pin="P$1"/>
-<wire x1="53.34" y1="93.98" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
-<pinref part="FAN_2_12V" gate="G$1" pin="P$1"/>
-<wire x1="45.72" y1="93.98" x2="45.72" y2="96.52" width="0.1524" layer="91"/>
-<wire x1="45.72" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
-<junction x="45.72" y="93.98"/>
-<pinref part="FAN_1_12V" gate="G$1" pin="P$1"/>
-<wire x1="38.1" y1="96.52" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
-<wire x1="38.1" y1="93.98" x2="45.72" y2="93.98" width="0.1524" layer="91"/>
-<junction x="53.34" y="93.98"/>
-<wire x1="53.34" y1="93.98" x2="53.34" y2="76.2" width="0.1524" layer="91"/>
-<pinref part="SV1" gate="G$1" pin="5"/>
-<wire x1="53.34" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
-</segment>
-</net>
 <net name="N$11" class="0">
 <segment>
 <pinref part="THERM_SIG" gate="G$1" pin="P$1"/>
@@ -1413,13 +1391,34 @@ W = angled&lt;p&gt;
 <pinref part="SV1" gate="G$1" pin="7"/>
 </segment>
 </net>
-<net name="HOT_12V" class="0">
+<net name="12V" class="0">
 <segment>
+<pinref part="FAN_0_12V" gate="G$1" pin="P$1"/>
+<wire x1="53.34" y1="93.98" x2="53.34" y2="96.52" width="0.1524" layer="91"/>
+<pinref part="FAN_2_12V" gate="G$1" pin="P$1"/>
+<wire x1="45.72" y1="93.98" x2="45.72" y2="96.52" width="0.1524" layer="91"/>
+<wire x1="45.72" y1="93.98" x2="53.34" y2="93.98" width="0.1524" layer="91"/>
+<junction x="45.72" y="93.98"/>
+<pinref part="FAN_1_12V" gate="G$1" pin="P$1"/>
+<wire x1="38.1" y1="96.52" x2="38.1" y2="93.98" width="0.1524" layer="91"/>
+<wire x1="38.1" y1="93.98" x2="45.72" y2="93.98" width="0.1524" layer="91"/>
 <pinref part="HOT_12V" gate="G$1" pin="P$1"/>
 <wire x1="53.34" y1="68.58" x2="63.5" y2="68.58" width="0.1524" layer="91"/>
 <wire x1="53.34" y1="68.58" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
 <pinref part="SV1" gate="G$1" pin="1"/>
 <wire x1="45.72" y1="71.12" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
+<wire x1="53.34" y1="93.98" x2="53.34" y2="71.12" width="0.1524" layer="91"/>
+<junction x="53.34" y="71.12"/>
+<junction x="53.34" y="93.98"/>
+</segment>
+</net>
+<net name="N$8" class="0">
+<segment>
+<pinref part="THERM_GND" gate="G$1" pin="P$1"/>
+<wire x1="63.5" y1="50.8" x2="48.26" y2="50.8" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="50.8" x2="48.26" y2="76.2" width="0.1524" layer="91"/>
+<pinref part="SV1" gate="G$1" pin="5"/>
+<wire x1="48.26" y1="76.2" x2="45.72" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 </net>
 </nets>
