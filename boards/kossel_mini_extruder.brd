@@ -682,12 +682,12 @@ design rules under a new name.</description>
 <signal name="N$17">
 <contactref element="LED12" pad="C"/>
 <contactref element="R12" pad="2"/>
-<wire x1="50.779421875" y1="20.15" x2="50.590671875" y2="17.925" width="0" layer="19" extent="1-1"/>
+<wire x1="50.779421875" y1="20.15" x2="50.590671875" y2="17.925" width="0.3048" layer="1"/>
 </signal>
 <signal name="N$18">
 <contactref element="LED13" pad="C"/>
 <contactref element="R13" pad="2"/>
-<wire x1="31" y1="49.3" x2="33.1" y2="49.65" width="0" layer="19" extent="1-1"/>
+<wire x1="33.1" y1="49.65" x2="31" y2="49.3" width="0.3048" layer="1"/>
 </signal>
 <signal name="VCC1">
 <contactref element="LED11" pad="A"/>
